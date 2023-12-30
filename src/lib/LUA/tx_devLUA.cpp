@@ -107,11 +107,26 @@ static struct luaItem_selection luaModelMatch = {
     modelMatchUnit
 };
 
+#if defined(PLATFORM_ESP32)
+static struct luaItem_selection luaBLETelemetry = {
+    {"BleTelemetry", CRSF_TEXT_SELECTION},
+    0, // value
+    "Off;On",
+    STR_EMPTYSPACE
+};
+#endif
+
+
 static struct luaItem_command luaBind = {
     {"Bind", CRSF_COMMAND},
     lcsIdle, // step
     STR_EMPTYSPACE
 };
+
+ #if defined(PLATFORM_ESP32)
+  setLuaTextSelectionValue(&luaBLETelemetry, (uint8_t)config.GetBLETelemetry());
+ #endif
+
 
 static struct luaItem_string luaInfo = {
     {"Bad/Good", (crsf_value_type_e)(CRSF_INFO | CRSF_FIELD_ELRS_HIDDEN)},
