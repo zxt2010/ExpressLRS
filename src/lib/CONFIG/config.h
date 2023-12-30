@@ -53,7 +53,7 @@ typedef struct {
 				bleTelemetry:1,
                 ptrStartChannel:4,
                 ptrEnableChannel:5,
-                _unused:3;
+                _unused:2;
 } model_config_t;
 
 typedef struct {
