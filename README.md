@@ -56,7 +56,7 @@ ExpressLRS currently supports hardware from the following manufacturers: AxisFly
 
 For an exhaustive list of hardware targets and their user guides, check out the [Supported Hardware](https://www.expresslrs.org/2.0/hardware/supported-hardware/) and [Receiver Selection](https://www.expresslrs.org/2.0/hardware/receiver-selection/) pages on the website. We do not manufacture any of our hardware, so we can only provide limited support on defective hardware.
 
-## Developers
+## Developers x
 
 If you are a developer and would like to contribute to the project, feel free to join the [discord](https://discord.gg/expresslrs) and chat about bugs and issues. You can also look for issues at the [GitHub Issue Tracker](https://github.com/ExpressLRS/ExpressLRS/issues). The best thing to do is to submit a Pull Request to the GitHub Repository. 
 
